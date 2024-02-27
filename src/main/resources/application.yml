@@ -1,0 +1,16 @@
+#连接池
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mysqltest?useSSL=false
+    username: root
+    password: wubin123
+
+#Mybatis整合
+mybatis:
+  type-aliases-package: com.wubin.entity
+  mapper-locations: classpath:/mybatis/*.xml
+
+#关闭thymeleaf缓存
+thymeleaf:
+  cache: false
